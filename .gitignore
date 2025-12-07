@@ -1,0 +1,7 @@
+*.ipynb
+.ipynb_checkpoints/
+.ipynb_aml_checkpoints/
+notebooks/tests/
+artifacts/
+__pycache__/
+

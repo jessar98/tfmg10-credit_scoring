@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: blue
+endpoint_name: g10tfm-endpoint-v2
+model:
+  path: ./g10tfm_model_test1.pkl
+code_configuration:
+  code: .
+  scoring_script: score_v2.py
+environment: azureml:g10tfm-env-v2:2
+instance_type: Standard_DS2_v2
+instance_count: 1
