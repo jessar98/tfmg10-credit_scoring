@@ -12,3 +12,7 @@ dependencies:
       - pandas
       - scikit-learn
       - xgboost==1.5.2
+      - lightgbm
+      - catboost
+      - matplotlib
+      - plotly
