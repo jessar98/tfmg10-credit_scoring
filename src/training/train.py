@@ -149,7 +149,7 @@ def plot_model_evaluation(y_true, y_pred_proba, model=None, model_name="XGBoost"
             plt.text(j, i, str(cm[i, j]), ha='center', va='center')
     
     plt.tight_layout()
-    plt.savefig('../artifacts/model_evaluation_plots.png', dpi=300, bbox_inches='tight')
+    plt.savefig('artifacts/model_evaluation_plots.png', dpi=300, bbox_inches='tight')
     plt.show()
 
 def comprehensive_model_evaluation(model, X_test, y_test, model_name="XGBoost"):
@@ -230,7 +230,7 @@ def save_model_report(metrics, cv_stats, model_name="XGBoost"):
         'recommendations': generate_model_recommendations(metrics)
     }
     
-    with open(f'../artifacts/{model_name.lower()}_evaluation_report.json', 'w') as f:
+    with open(f'artifacts/{model_name.lower()}_evaluation_report.json', 'w') as f:
         json.dump(report, f, indent=2, default=str)
     
     return report
@@ -388,15 +388,15 @@ def main():
 
     # Guardar modelo como artifact
     print("\n💾 Guardando modelo entrenado...")
-    joblib.dump(model, "../artifacts/g10tfm_model_test1.pkl")
+    joblib.dump(model, "artifacts/g10tfm_model_test1.pkl")
     
     print("\nProceso completado exitosamente!")
     print("📁 Archivos generados:")
-    print("• ../artifacts/g10tfm_model_test1.pkl (modelo entrenado)")
-    print("• ../artifacts/lightgbm_evaluation_report.json (reporte completo)")
-    print("• ../artifacts/model_evaluation_plots.png (gráficos de evaluación)")
-    print("• ../artifacts/overfitting_analysis.png (análisis de overfitting)")
-    print("• ../artifacts/overfitting_analysis_report.json (reporte de overfitting)")
+    print("• artifacts/g10tfm_model_test1.pkl (modelo entrenado)")
+    print("• artifacts/lightgbm_evaluation_report.json (reporte completo)")
+    print("• artifacts/model_evaluation_plots.png (gráficos de evaluación)")
+    print("• artifacts/overfitting_analysis.png (análisis de overfitting)")
+    print("• artifacts/overfitting_analysis_report.json (reporte de overfitting)")
 
 if __name__ == "__main__":
     main()
