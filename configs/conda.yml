@@ -1,0 +1,14 @@
+name: g10tfm-env-v2
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - azureml-inference-server-http
+      - joblib
+      - numpy
+      - pandas
+      - scikit-learn
+      - xgboost==1.5.2

@@ -1,0 +1,53 @@
+# =========================
+# Datos / datasets
+# =========================
+*.csv
+data/
+**/data/
+
+# =========================
+# Modelos entrenados
+# =========================
+*.pkl
+*.joblib
+*.onnx
+*.pt
+*.pth
+
+# =========================
+# Azure ML
+# =========================
+.amlignore
+*.amltmp
+**/*.amltmp
+.azureml/
+
+# =========================
+# Notebooks temporales
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# =========================
+# SO / editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+*.log
+.ipynb_aml_checkpoints/
