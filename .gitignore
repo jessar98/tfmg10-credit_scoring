@@ -1,7 +1,58 @@
+# =========================
+# Jupyter / Notebooks
+# =========================
 *.ipynb
 .ipynb_checkpoints/
 .ipynb_aml_checkpoints/
 notebooks/tests/
-artifacts/
-__pycache__/
 
+# =========================
+# Datos / datasets
+# =========================
+*.csv
+data/
+**/data/
+artifacts/
+
+# =========================
+# Modelos entrenados
+# =========================
+*.pkl
+*.joblib
+*.onnx
+*.pt
+*.pth
+
+# =========================
+# Azure ML
+# =========================
+.amlignore
+*.amltmp
+**/*.amltmp
+.azureml/
+mlruns/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+ENV/
+
+# =========================
+# SO / Editor
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================
+# Logs
+# =========================
+*.log
